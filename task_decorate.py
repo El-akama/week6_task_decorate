@@ -68,21 +68,26 @@ import sched, time
 # task4
 # users = {'name1': 1234, 'name2': 3456, 'name3': 5678, 'name4': 7890}
 # def decorate(func):
-#     def wrapper(username='username', password = 'password'):
+#     def wrapper(username, password):
 #         if username in users.keys():
-#             if password == users[username]:
+#             if password in users.values():
 #                 func(username, password)
 #             else:
-#                 print('Password is wrong')
-#         else: 
-#             print('Username not defind')
+#                 raise Exception ('Password is invalid')
+        
+#         elif username not in users.keys() :
+#             if password in users.values() :
+#                 raise Exception ('Username is not defined!') 
+#             else :
+#                 raise Exception ('Username and password not correct!')
+
 #     return wrapper
 
 # @decorate
 # def login(username, password ):
 #     print(f'Wellcome, {username}')
 
-# login('name5', 12345)
+# login('name5', 7890)
 
 
 # task5
