@@ -66,7 +66,7 @@ import sched, time
 
 
 # task4
-users = {'name1': 1234, 'name2': 3456, 'name3': 5678, 'name4': 7890}
+# users = {'name1': 1234, 'name2': 3456, 'name3': 5678, 'name4': 7890}
 # def decorate(func):
 #     def wrapper(username='username', password = 'password'):
 #         if username in users.keys():
@@ -84,22 +84,6 @@ users = {'name1': 1234, 'name2': 3456, 'name3': 5678, 'name4': 7890}
 
 # login(username='name5', password=12345)
 
-def decorate(func):
-    def wrapper(username='username', password = 'password'):
-        if username in users.keys():
-            if password == users[username]:
-                func(username, password)
-            else:
-                print('Password is wrong')
-        else: 
-            print('Username not defind')
-    return wrapper
-
-@decorate
-def login(username, password ):
-    print(f'Wellcome, {username}')
-
-login('name4', 7890)
 
 # task5
 # def myDecorator(func):
